@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="doc-title">Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide-static@latest/dist/lucide.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#home" class="logo" id="nav-logo">G.C.N.</a>
+            <nav class="main-nav">
+                <ul id="nav-links-ul">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="mobile-menu-button" aria-label="Toggle mobile menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <div id="mobile-nav-menu" class="mobile-nav-menu">
+             <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container text-center">
+                <h1 id="hero-name">Hi, I'm Goutham Chandra Nakka</h1>
+                <p class="tagline" id="hero-tagline">Data Engineer | Building Scalable Data Solutions</p>
+                <p class="sub-tagline" id="hero-subtagline">Welcome to my personal portfolio. Explore my projects, experience, and skills in data engineering.</p>
+                <a href="#projects" class="cta-button">View My Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section scroll-mt">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <p id="about-bio">Loading bio...</p>
+                    <h3>Skills</h3>
+                    <div id="skills-container" class="skills-grid">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section scroll-mt">
+            <div class="container">
+                <h2 class="section-title">My Data Projects</h2>
+                <div class="project-filters">
+                    <input type="text" id="project-search" placeholder="Search projects..." aria-label="Search projects">
+                    <select id="project-category-filter" aria-label="Filter projects by category">
+                        <option value="All">All Categories</option>
+                        </select>
+                </div>
+                <div id="projects-grid" class="projects-grid">
+                    </div>
+                <p id="no-projects-message" class="text-center" style="display:none;">No projects found matching your criteria.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section scroll-mt">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div id="experience-container" class="experience-container">
+                    </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="content-section scroll-mt">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div id="certifications-grid" class="certifications-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section scroll-mt">
+            <div class="container text-center">
+                <h2 class="section-title">Get In Touch</h2>
+                <p id="contact-intro">I'm always open to discussing new projects, collaborations, or opportunities. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a id="contact-email" href="mailto:gouthamchandranakka@gmail.com" class="contact-link-item">
+                        <i data-lucide="mail" class="icon"></i> <span id="contact-email-text">gouthamchandranakka@gmail.com</span>
+                    </a>
+                    <div id="contact-phone" class="contact-link-item">
+                        <i data-lucide="phone" class="icon"></i> <span id="contact-phone-text">+1(334)895-5586</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a id="contact-linkedin" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                        <i data-lucide="linkedin" class="icon-social"></i>
+                    </a>
+                    <a id="contact-github" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i data-lucide="github" class="icon-social"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p id="footer-copyright">&copy; 2024 Goutham Chandra Nakka. All rights reserved.</p>
+            <p class="footer-note">Built with HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
