@@ -3,125 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="doc-title">Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/lucide-static@latest/dist/lucide.min.js"></script>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <a href="#home" class="logo" id="nav-logo">G.C.N.</a>
-            <nav class="main-nav">
-                <ul id="nav-links-ul">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-            <button id="mobile-menu-button" aria-label="Toggle mobile menu" aria-expanded="false">
-                <i data-lucide="menu"></i>
-            </button>
+    <title>Goutham Chandra Nakka - Machine Learning Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> </head>
+<body class="antialiased">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-sky-700">Goutham C. Nakka</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#summary" class="nav-link active">Summary</a>
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-sky-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div id="mobile-nav-menu" class="mobile-nav-menu">
-             <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#summary" class="nav-link block active">Summary</a>
+                <a href="#skills" class="nav-link block">Skills</a>
+                <a href="#experience" class="nav-link block">Experience</a>
+                <a href="#projects" class="nav-link block">Projects</a>
+                <a href="#education" class="nav-link block">Education</a>
+                <a href="#certifications" class="nav-link block">Certifications</a>
+                <a href="#contact" class="nav-link block">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-sky-600 text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Goutham Chandra Nakka</h1>
+            <p class="text-xl md:text-2xl font-light mb-8">Machine Learning Engineer</p>
+            <div class="flex justify-center space-x-4 text-lg">
+                <span class="icon-text text-sky-100"><i class="fas fa-map-marker-alt"></i> Dallas, TX</span>
+            </div>
+             <div class="mt-8">
+                <a href="#contact" class="bg-white text-sky-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-sky-100 transition duration-300">Get in Touch</a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="container text-center">
-                <h1 id="hero-name">Hi, I'm Goutham Chandra Nakka</h1>
-                <p class="tagline" id="hero-tagline">Data Engineer | Building Scalable Data Solutions</p>
-                <p class="sub-tagline" id="hero-subtagline">Welcome to my personal portfolio. Explore my projects, experience, and skills in data engineering.</p>
-                <a href="#projects" class="cta-button">View My Projects</a>
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="summary" class="py-12">
+            <h2 class="section-title">Professional Summary</h2>
+            <div class="card max-w-3xl mx-auto">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Machine Learning Engineer with 5 years of experience in designing and deploying ML solutions across finance, healthcare, and consumer goods domains. Specialized in end-to-end ML lifecycle: data ingestion, cleaning, preprocessing, feature engineering, model training, evaluation, and deployment. Proficient in Python, SQL, and Spark, with hands-on experience in building scalable data pipelines and ML workflows. Extensive experience with AWS services and familiar with Azure cloud tools. Skilled in machine learning, deep learning frameworks, NLP techniques, and Big Data tools. Adept at data visualization and translating complex insights into actionable business outcomes. Experienced in MLOps and CI/CD pipelines.
+                </p>
             </div>
         </section>
 
-        <section id="about" class="content-section scroll-mt">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p id="about-bio">Loading bio...</p>
-                    <h3>Skills</h3>
-                    <div id="skills-container" class="skills-grid">
-                        </div>
+        <section id="skills" class="py-12 bg-gray-100 rounded-xl">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Programming</h3>
+                    <p><span class="badge">Python (Pandas, NumPy, Scikit-learn, PyTorch, TensorFlow, Boto3)</span> <span class="badge">SQL</span> <span class="badge">Scala</span> <span class="badge">Bash</span> <span class="badge">C++</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Machine Learning</h3>
+                    <p><span class="badge">Classification</span> <span class="badge">Regression</span> <span class="badge">Time Series Forecasting</span> <span class="badge">Clustering</span> <span class="badge">XGBoost</span> <span class="badge">Random Forest</span> <span class="badge">SVM</span> <span class="badge">Neural Networks</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">NLP</h3>
+                    <p><span class="badge">spaCy</span> <span class="badge">NLTK</span> <span class="badge">BERT</span> <span class="badge">LDA</span> <span class="badge">Word2Vec</span> <span class="badge">Named Entity Recognition</span> <span class="badge">Text Summarization</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Cloud Platforms</h3>
+                    <p class="font-medium text-gray-700">AWS: <span class="badge">S3</span> <span class="badge">EC2</span> <span class="badge">Lambda</span> <span class="badge">SageMaker</span> <span class="badge">Glue</span> <span class="badge">Athena</span> <span class="badge">Redshift</span> <span class="badge">CloudFormation</span></p>
+                    <p class="font-medium text-gray-700 mt-2">Azure: <span class="badge">Data Factory</span> <span class="badge">Cosmos DB</span> <span class="badge">Azure DevOps</span> <span class="badge">Azure Databricks</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Big Data Ecosystem</h3>
+                    <p><span class="badge">Spark (PySpark, SparkSQL)</span> <span class="badge">Hadoop</span> <span class="badge">Hive</span> <span class="badge">Kafka</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">MLOps & DevOps</h3>
+                    <p><span class="badge">MLflow</span> <span class="badge">Airflow</span> <span class="badge">Jenkins</span> <span class="badge">Git</span> <span class="badge">Docker</span> <span class="badge">Kubernetes</span> <span class="badge">Terraform</span> <span class="badge">Ansible</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Databases</h3>
+                    <p><span class="badge">MySQL</span> <span class="badge">PostgreSQL</span> <span class="badge">MongoDB</span> <span class="badge">Cassandra</span> <span class="badge">DynamoDB</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Visualization Tools</h3>
+                    <p><span class="badge">Tableau</span> <span class="badge">Power BI</span> <span class="badge">Matplotlib</span> <span class="badge">Seaborn</span> <span class="badge">Plotly</span></p>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Frameworks & APIs</h3>
+                    <p><span class="badge">FastAPI</span> <span class="badge">Flask</span> <span class="badge">Django REST Framework</span> <span class="badge">OpenCV</span></p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-3 text-sky-600">Version Control & Others</h3>
+                    <p><span class="badge">Git</span> <span class="badge">GitHub</span> <span class="badge">Agile</span> <span class="badge">Scrum</span> <span class="badge">Jira</span> <span class="badge">Postman</span> <span class="badge">PyTest</span> <span class="badge">Prometheus</span> <span class="badge">Grafana</span></p>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="content-section scroll-mt">
-            <div class="container">
-                <h2 class="section-title">My Data Projects</h2>
-                <div class="project-filters">
-                    <input type="text" id="project-search" placeholder="Search projects..." aria-label="Search projects">
-                    <select id="project-category-filter" aria-label="Filter projects by category">
-                        <option value="All">All Categories</option>
-                        </select>
+        <section id="experience" class="py-12">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="space-y-12">
+                <div class="card">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+                        <h3 class="text-2xl font-semibold text-sky-700">Machine Learning Engineer</h3>
+                        <span class="text-gray-500 text-sm mt-1 md:mt-0">Dec 2023 - Present</span>
+                    </div>
+                    <p class="text-lg font-medium text-gray-800 mb-3">CareSource – Dayton, OH</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 leading-relaxed">
+                        <li>Orchestrated the development of a real-time customer churn prediction model (Random Forest, Logistic Regression), increasing retention by 15%.</li>
+                        <li>Architected and deployed NLP pipelines to extract key entities from customer support transcripts, reducing manual analysis time by 40%.</li>
+                        <li>Led development of an ML model lifecycle management system using MLflow (experiment tracking, model registry, packaging).</li>
+                        <li>Designed and implemented scalable ETL pipelines (PySpark, AWS Glue) for large-scale customer behavioral data (1TB weekly).</li>
+                        <li>Deployed ML models via SageMaker endpoints with FastAPI (95% uptime, <100ms latency).</li>
+                        <li>Developed interactive dashboards (Tableau, Power BI) for model performance, A/B tests, and customer insights.</li>
+                        <li>Collaborated with product managers to translate analytical findings into actionable business recommendations.</li>
+                        <li>Engineered data ingestion from diverse sources (Kafka streaming, S3 batch) into AWS data lake.</li>
+                        <li>Implemented automated data quality checks and validation rules in ETL pipelines (AWS Glue).</li>
+                        <li>Developed and maintained data cataloging (AWS Glue Data Catalog).</li>
+                        <li>Designed real-time data processing (Amazon Kinesis Data Streams, AWS Lambda).</li>
+                        <li>Utilized AWS CloudFormation for automated infrastructure provisioning.</li>
+                        <li>Developed and maintained CI/CD pipelines (Jenkins, Azure DevOps).</li>
+                        <li>Implemented data warehousing solutions on Amazon Redshift.</li>
+                    </ul>
                 </div>
-                <div id="projects-grid" class="projects-grid">
-                    </div>
-                <p id="no-projects-message" class="text-center" style="display:none;">No projects found matching your criteria.</p>
-            </div>
-        </section>
 
-        <section id="experience" class="content-section scroll-mt">
-            <div class="container">
-                <h2 class="section-title">Work Experience</h2>
-                <div id="experience-container" class="experience-container">
+                <div class="card">
+                     <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+                        <h3 class="text-2xl font-semibold text-sky-700">Software Developer</h3>
+                        <span class="text-gray-500 text-sm mt-1 md:mt-0">May 2018 – Jul 2022</span>
                     </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="content-section scroll-mt">
-            <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                <div id="certifications-grid" class="certifications-grid">
-                    </div>
-            </div>
-        </section>
-
-        <section id="contact" class="content-section scroll-mt">
-            <div class="container text-center">
-                <h2 class="section-title">Get In Touch</h2>
-                <p id="contact-intro">I'm always open to discussing new projects, collaborations, or opportunities. Feel free to reach out!</p>
-                <div class="contact-links">
-                    <a id="contact-email" href="mailto:gouthamchandranakka@gmail.com" class="contact-link-item">
-                        <i data-lucide="mail" class="icon"></i> <span id="contact-email-text">gouthamchandranakka@gmail.com</span>
-                    </a>
-                    <div id="contact-phone" class="contact-link-item">
-                        <i data-lucide="phone" class="icon"></i> <span id="contact-phone-text">+1(334)895-5586</span>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a id="contact-linkedin" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                        <i data-lucide="linkedin" class="icon-social"></i>
-                    </a>
-                    <a id="contact-github" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                        <i data-lucide="github" class="icon-social"></i>
-                    </a>
+                    <p class="text-lg font-medium text-gray-800 mb-3">Flipkart – Hyderabad</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700 leading-relaxed">
+                        <li>Designed and implemented recommendation systems (collaborative filtering, content-based) improving CTR by 22%.</li>
+                        <li>Developed and deployed classification models for fraud detection (>92% recall).</li>
+                        <li>Engineered batch and streaming data pipelines (Airflow, Kafka) for real-time customer interactions.</li>
+                        <li>Containerized ML services (Docker) and deployed in Kubernetes clusters (EKS/Azure Kubernetes Service).</li>
+                        <li>Led initiative for GitOps practices and infrastructure-as-code (Terraform, Ansible).</li>
+                        <li>Developed predictive models (Decision Tree, Random Forest, Naïve Bayes, Logistic Regression, Cluster Analysis, Neural Networks).</li>
+                        <li>Designed and implemented a distributed data processing framework (Apache Spark).</li>
+                        <li>Developed and maintained data pipelines for ingestion from various sources into Hadoop and Spark.</li>
+                        <li>Implemented data quality checks and validation rules for data lake accuracy.</li>
+                        <li>Optimized database performance with efficient SQL queries and indexing.</li>
+                        <li>Utilized Git for version control and collaboration.</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <section id="projects" class="py-12 bg-gray-100 rounded-xl">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2 text-sky-600">Medical Image Segmentation – Deep Learning (Polyp Detection)</h3>
+                    <p class="text-sm text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, PyTorch, OpenCV, NumPy, Albumentations, Scikit-learn</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Developed a U-Net++ model for polyp segmentation from colonoscopy images (CVC-ClinicDB dataset).</li>
+                        <li>Implemented preprocessing and data augmentation (Albumentations).</li>
+                        <li>Utilized OpenCV and PyTorch; trained on GPU.</li>
+                        <li>Evaluated with IoU and Dice Coefficient, achieving high accuracy.</li>
+                        <li>Aids early detection in clinical settings.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2 text-sky-600">AI Video Summarization Project using Mixtral, Whisper, and AWS</h3>
+                    <p class="text-sm text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, FFmpeg, Whisper, Mixtral, Flask, AWS EC2</p>
+                     <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Developed an AI tool for extracting key concepts from educational videos (Whisper for transcription, Mixtral for summarization/quiz).</li>
+                        <li>Automated audio extraction (FFmpeg); deployed on GPU-enabled AWS EC2.</li>
+                        <li>Built a web interface (Flask) with feedback capture.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2 text-sky-600">Financial Reporting Agent with Microsoft Fabric & RAG</h3>
+                    <p class="text-sm text-gray-600 mb-3"><strong>Tech Stack:</strong> Python, Microsoft Fabric, OneLake, Azure, Vanna AI, GPT-4, LangChain</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                        <li>Built a financial reporting agent using Microsoft Fabric (OneLake, lakehouse architecture).</li>
+                        <li>Developed a RAG system (GPT-4, LangChain) for contextual financial queries.</li>
+                        <li>Integrated Vanna AI for natural language-to-SQL.</li>
+                        <li>Automated data ingestion (Dataflow Gen2); visualized insights on a dashboard.</li>
+                        <li>Enabled scalable, low-latency analysis on Azure.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-12">
+            <h2 class="section-title">Education</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-sky-700">Masters in Computer Science</h3>
+                    <p class="text-gray-700">Auburn University at Montgomery (AUM)</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold text-sky-700">B. Tech</h3>
+                    <p class="text-gray-700">Andhra University</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="py-12 bg-gray-100 rounded-xl">
+            <h2 class="section-title">Certifications</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="card text-center">
+                    <img src="https://placehold.co/150x150/0EA5E9/FFFFFF?text=AWS+ML" alt="AWS Certified Machine Learning Engineer" class="w-24 h-24 mx-auto mb-4 rounded-full object-cover" onerror="this.src='https://placehold.co/150x150/E0E0E0/000000?text=AWS+ML+Error'">
+                    <h3 class="text-lg font-semibold text-sky-700">AWS Certified Machine Learning Engineer</h3>
+                </div>
+                <div class="card text-center">
+                    <img src="https://placehold.co/150x150/3B82F6/FFFFFF?text=Azure+Data" alt="Azure Data Engineer Associate" class="w-24 h-24 mx-auto mb-4 rounded-full object-cover" onerror="this.src='https://placehold.co/150x150/E0E0E0/000000?text=Azure+Error'">
+                    <h3 class="text-lg font-semibold text-sky-700">Azure Data Engineer Associate</h3>
+                </div>
+                <div class="card text-center">
+                    <img src="https://placehold.co/150x150/2563EB/FFFFFF?text=Docker" alt="Docker Certified Associate" class="w-24 h-24 mx-auto mb-4 rounded-full object-cover" onerror="this.src='https://placehold.co/150x150/E0E0E0/000000?text=Docker+Error'">
+                    <h3 class="text-lg font-semibold text-sky-700">Docker Certified Associate</h3>
+                </div>
+            </div>
+        </section>
+
+         <section id="contact" class="py-16">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="card max-w-lg mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-6">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                </p>
+                <div class="space-y-4">
+                    <p class="icon-text justify-center text-lg"><i class="fas fa-envelope text-sky-600"></i> <a href="mailto:GouthamCN.7@gmail.com" class="hover:text-sky-600">GouthamCN.7@gmail.com</a></p>
+                    <p class="icon-text justify-center text-lg"><i class="fas fa-phone text-sky-600"></i> <a href="tel:+13348955586" class="hover:text-sky-600">+1 (334) 895-5586</a></p>
+                    <p class="icon-text justify-center text-lg"><i class="fas fa-globe text-sky-600"></i> <a href="http://www.Goutham-CN.space" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600">www.Goutham-CN.space</a></p>
+                    <p class="icon-text justify-center text-lg"><i class="fab fa-linkedin text-sky-600"></i> <a href="#" class="hover:text-sky-600">linkedin.com/in/gouthamcnakka</a> <span class="text-xs text-gray-400">(Update with actual LinkedIn)</span></p>
+                     <p class="icon-text justify-center text-lg"><i class="fab fa-github text-sky-600"></i> <a href="#" class="hover:text-sky-600">github.com/gouthamcnakka</a> <span class="text-xs text-gray-400">(Update with actual GitHub)</span></p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <div class="container text-center">
-            <p id="footer-copyright">&copy; 2024 Goutham Chandra Nakka. All rights reserved.</p>
-            <p class="footer-note">Built with HTML, CSS & JavaScript.</p>
-        </div>
+    <footer class="bg-sky-700 text-sky-100 py-8 text-center">
+        <p>&copy; <span id="currentYear"></span> Goutham Chandra Nakka. All rights reserved.</p>
+        <p class="text-sm">Designed with <i class="fas fa-heart text-red-400"></i> using HTML & Tailwind CSS</p>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="script.js"></script> </body>
 </html>
